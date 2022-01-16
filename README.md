@@ -1,2 +1,2 @@
 # NDNSimContainer
-This repository has setting files for create container for NDN simulator over NetworkSimulator-3
+This repository has setting files for creating container for NDN simulator over NetworkSimulator-3
