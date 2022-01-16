@@ -1,0 +1,13 @@
+version: '3'
+services:
+    ndn-sim:
+        build: ./ndn-sim/
+        volumes:
+            - "./ndn-sim/buildscripts:/buildscripts"
+            - "./ndn-sim:/ndnSIM"
+            - "/tmp/.X11-unix/:/tmp/.X11-unix"
+            - "${HOME}/.Xauthority:/root/.Xauthority"
+        entrypoint: "/bin/bash buildscripts/build.sh"
+        stdin_open: true
+        tty: true
+
